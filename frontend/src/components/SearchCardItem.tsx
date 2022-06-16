@@ -1,6 +1,6 @@
 import PALETTE from '../constants/palette';
 import styled from 'styled-components';
-import { SearchCardItemProps } from '../types';
+import { SubscriptionUsedFront } from '../types';
 import { ReactComponent as BlueHeart } from '../assets/icons/blueHeart.svg';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,6 +9,7 @@ const StyledBox = styled.div`
   height: 30%;
   margin: 1rem;
   box-sizing: border-box;
+  cursor: pointer;
 `;
 
 const StyledCard = styled.div`
@@ -52,6 +53,10 @@ const StyledLike = styled.span`
   font-size: 0.7em;
   color: ${PALETTE.DARK_020};
 `;
+
+export type SearchCardItemProps = {
+  subscription: SubscriptionUsedFront;
+}
 
 const SearchCardItem = ({ subscription }: SearchCardItemProps) => {
   const navigate = useNavigate();

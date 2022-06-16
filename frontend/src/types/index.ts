@@ -32,13 +32,13 @@ export type SubscriptionFromBackend = {
 export type SubscriptionUsedFront = {
   readonly id: number;
   readonly houseName: string;
-  readonly recNotice: string;
+  readonly recNotice?: string;
   readonly houseLocation: string;
-  readonly applyScale: string;
+  readonly applyScale?: string;
   readonly applyStartDate: string;
   readonly applyEndDate: string;
-  readonly applyHomepage: string;
-  likeNum: number;
+  readonly applyHomepage?: string;
+  likeNum?: number;
   imgLink?: string;
 };
 
