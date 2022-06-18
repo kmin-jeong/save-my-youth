@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { SubscriptionUsedFront } from '../types';
 import tmpImg from '../assets/images/picture2.png';
 
-const SERVER_SUBSCRIPTION_URL = `https://secret-reaches-74853.herokuapp.com/api/subscription/perPage=10`;
+const SERVER_SUBSCRIPTION_URL = `https://secret-reaches-74853.herokuapp.com/api/subscription/perPage=20`;
 const SERVER_LIKE_COUNT_URL = `https://secret-reaches-74853.herokuapp.com/api/like`;
 
 export type Request = 'today' | 'theOtherDay' | 'region';

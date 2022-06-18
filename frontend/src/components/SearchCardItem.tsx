@@ -73,7 +73,7 @@ const SearchCardItem = ({ subscription }: SearchCardItemProps) => {
         </StyledText>
         <StyledLike>
           <BlueHeart />
-          126
+          {subscription.likeNum}
         </StyledLike>
       </StyledCard>
     </StyledBox>

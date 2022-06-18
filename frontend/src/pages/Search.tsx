@@ -5,6 +5,7 @@ import PALETTE from '../constants/palette';
 import useDebounce from '../hooks/useDebounce';
 import SearchCardList from '../components/SearchCardList';
 import useSubscription from '../hooks/useSubscription';
+import Pagenation from '../components/SearchPagination';
 
 const InputWrapper = styled.div`
   display: flex;
@@ -34,7 +35,7 @@ const Search = () => {
     if (e.key === 'Enter') {
       <div>
         <MessageWrapper>총 {subData.length}개의 공고가 있습니다</MessageWrapper>
-        <SearchCardList subData={subData} />;
+        <Pagenation subData={subData} />;
       </div>;
       if (keyword.length === 0) {
         alert("검색어를 입력해주세요")
@@ -53,7 +54,7 @@ const Search = () => {
         />
       </InputWrapper>
       <MessageWrapper>총 {subData.length}개의 공고가 있습니다</MessageWrapper>
-      <SearchCardList subData={subData} />
+      <Pagenation subData={subData} />
     </>
   );
 };

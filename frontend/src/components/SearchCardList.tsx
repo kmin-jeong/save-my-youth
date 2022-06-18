@@ -16,6 +16,7 @@ const SearchCardList = ({ subData }: SearchCardListProps) => {
             houseLocation: data.houseLocation,
             applyStartDate: data.applyStartDate,
             applyEndDate: data.applyEndDate,
+            likeNum:data.likeNum,
           };
 
           return (
