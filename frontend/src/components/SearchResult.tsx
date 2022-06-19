@@ -30,7 +30,7 @@ const SearchResult = ({ subData }: SearchCardListProps) => {
     return (
         <div>
             <MessageWrapper>총 {subData.length}개의 공고가 있습니다</MessageWrapper>
-            <SearchCardList subData={subData}></SearchCardList>
+            <SearchCardList type={'popular'} subData={subData}></SearchCardList>
         </div>
     );
 }
