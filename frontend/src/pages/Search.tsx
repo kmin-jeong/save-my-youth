@@ -5,7 +5,7 @@ import PALETTE from '../constants/palette';
 import useDebounce from '../hooks/useDebounce';
 import SearchCardList from '../components/SearchCardList';
 import useSubscription from '../hooks/useSubscription';
-import Pagenation from '../components/SearchPagination';
+import Pagenation from '../components/SearchResult';
 
 const InputWrapper = styled.div`
   display: flex;
@@ -53,7 +53,6 @@ const Search = () => {
           onKeyPress={onKeyPress}
         />
       </InputWrapper>
-      <MessageWrapper>총 {subData.length}개의 공고가 있습니다</MessageWrapper>
       <Pagenation subData={subData} />
     </>
   );
